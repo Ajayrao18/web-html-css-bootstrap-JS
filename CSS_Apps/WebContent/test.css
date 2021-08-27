@@ -1,0 +1,6 @@
+@charset "ISO-8859-1";
+body{background-color:#FF0000}
+p{color:yellow}
+h3{color:yellow}
+ol{list-style-type:upper-roman}
+ul{list-style-type:circle}

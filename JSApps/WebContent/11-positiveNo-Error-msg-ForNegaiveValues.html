@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Error message page</title>
+<script type="text/javascript">
+function sumoftwonos() {
+	document.getElementById("errorMsg").style.color="red";
+	document.getElementById("errorMsg").style.border="1px solid";
+	
+	var num1=prompt("enter 1st no"); //num1 is String
+	var num2=prompt("enter 2nd no"); //num2 is string
+	
+	num1=parseInt(num1); //num1 is int
+	num2=parseInt(num2)  // num2 is int
+	
+	if(num1<0){
+		document.getElementById("errormsg").innerHtml="please enter 1st no as positive !";
+		num1=prompt("enter 1st no");
+		num1=parseInt(num1);
+	}
+	if(num2<0){
+		document.getElementById("errormsg").innerHtml="please enter 2nd no as positive !";
+		num1=prompt("enter 2nd no");
+		num1=parseInt(num2);
+	}
+	var sum=num1+num2;
+	alert("sum = "+sum)
+	
+}
+
+</script>
+
+
+</head>
+<body>
+<button onClick="sumoftwonos()">Get sum</button>
+<div id="errormsg"></div>
+</body>
+</html>

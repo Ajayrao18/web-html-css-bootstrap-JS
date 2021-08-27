@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>html5 attributes</title>
+</head>
+<body>
+<form action="https://www.google.com" method="post"><br>
+
+<label>User name: <input type="text" name="user-name" required placeholder="at least 3 characters"></label><br>
+
+<label>First name: <input type="text" name="first-name" autofocus placeholder="enter first name"></label><br>
+
+<label>Wish: <input type="text" name="Wish" autocomplete="on" value="hi"></label><br>
+
+<label>City: <input type="text" name="city" required ></label><br>
+
+<label>Product code: <input type="text" name="product" pattern="[0-9][A-z]{3}" title="single digit followed by three uppercase letters"></label><br>
+
+<input type="submit" value="click to vist java2s.com"><br>
+
+
+
+<label>
+your favorite friut
+<datalist id="fruits">
+<select name=fruits>
+<option value="blackberry">Blackberry</option>
+<option value="Blackcurrant">Blackcurrant</option>
+<option value="blueberry">Blueberry</option>
+
+</select>
+if other,please specify
+</datalist>
+
+<input type="text" name="fruit" list="fruits">
+
+</label>
+</form>
+
+</body>
+</html>

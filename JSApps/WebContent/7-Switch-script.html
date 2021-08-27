@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Switch script</title>
+</head>
+<body>
+<script>
+window.document.write("hello")
+var today=new Date();
+var theDay=today.getDay(); 
+
+switch(theDay){
+case 3:
+	document.write("<b> Finally wednesday  </b>")
+    break;
+case 6:
+		document.write("<b> super saturday  </b>")
+	    break;	
+case 0:
+		document.write("<b> sleepy sunday  </b>")
+		break;		
+case 1:
+		document.write("<b> monday  </b>")
+		break;		
+}
+default{
+	document.write("<b>waiting for this weekend</b>")
+	break;
+}
+
+
+</script>
+</body>
+</html>

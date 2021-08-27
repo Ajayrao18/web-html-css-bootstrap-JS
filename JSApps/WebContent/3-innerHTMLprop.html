@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>innerHTML prop</title>
+</head>
+<body>
+<p id="msg">hello world</p>
+
+<script>
+var message;
+
+message=document.getElementById("msg").innerHTML;
+
+document.write("<u>"+message+"<u>");
+
+document.getElementById("msg").innerHTML="HI WORLD!";
+
+message=20;//message is numeric type
+
+var sum=message+30;
+alert("sum = "+sum);
+</script>
+</body>
+</html>

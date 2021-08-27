@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+function isNumberKey(evt){
+	
+	
+	var charCode=(evt.Which)?evt.Which:evt.keyCode;
+	if(charCode != 46&& charCode>31&& (charCode < 48 || charCode>57) )
+		
+		return false;//key wont be usebale
+		
+		return true;
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+Enter mobileNo:<input id="txtChar" onkeypress="return isNumberKey(event)" type="text" name="txtChar" >
+</body>
+
+
+</html>
